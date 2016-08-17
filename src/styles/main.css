@@ -1,0 +1,16 @@
+body {
+  background-color: #e8edf3;
+}
+.primary-header {
+  background-color: white;
+}
+header h1 {
+  color: grey;
+}
+.primary-footer {
+  text-align: left;
+  background-color: white;
+}
+footer h5 {
+  color: grey;
+}
