@@ -12,5 +12,8 @@
     "jshint": "^2.9.2",
     "jshint-stylish": "^2.2.0",
     "run-sequence": "^1.2.2"
+  },
+  "dependencies": {
+    "showtimes": "^2.1.2"
   }
 }
