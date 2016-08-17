@@ -7,26 +7,33 @@
     <link rel="stylesheet" href="./src/styles/main.css">
   </head>
   <body>
-    <header>
-      <div class='primary-header text-center col-md-12'>
-        <h1>Movies and Stuff</h1>
-      </div>
-    </header>
-
     <div class='container'>
-      <form id='movie-input'>
-        <label for='title'>
-          Please enter a movie here:
-            <input type='text'>
-        </label>
-      </form>
-    </div>
+      <header>
+        <div class='primary-header col-md-12'>
+          <h3>Movies and Stuff</h3>
+        </div>
+      </header>
 
-    <footer>
-      <div class='primary-footer col-md-12'>
-        <h5>&copy; Heathcliff and Austin productions</h5>
+      <div class='form-box col-md-4 text-center'>
+        <form id='movie-input'>
+          <label for='title'>
+            Please enter a movie here:
+              <input type='text' placeholder='eg "Suicide Squad"'>
+          </label>
+        </form>
+      </div><br>
+
+      <div class='backgroundPicture col-md-8'></div>
+
+      <div class='api-results col-md-4'>
       </div>
-    </footer>
+
+      <footer>
+        <div class='primary-footer col-md-12'>
+          <h5>&copy; Heathcliff and Austin productions</h5>
+        </div>
+      </footer>
+    </div>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
     <script type="text/javascript" src="./src/scripts/main.js"></script>
   </body>

@@ -1,11 +1,12 @@
-body {
+.container {
   background-color: #e8edf3;
 }
 .primary-header {
   background-color: white;
 }
-header h1 {
+header h3 {
   color: grey;
+  text-align: right;
 }
 .primary-footer {
   text-align: left;
@@ -13,4 +14,17 @@ header h1 {
 }
 footer h5 {
   color: grey;
+}
+.backgroundPicture {
+  height: 88vh;
+  background-image: url('https://hd.unsplash.com/photo-1457365050282-c53d772ef8b2');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 100% 90%;
+}
+#movie-input {
+  margin-top: 10%;
+}
+.api-results {
+
 }
