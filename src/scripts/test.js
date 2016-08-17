@@ -1,6 +1,7 @@
+  // var Showtimes = require('showtimes');
 function getTheDatas (zip, movieInput){
-  var Showtimes = require('showtimes');
-  var api = new Showtimes(zip, {});
+
+  var api = new showtimes(zip, {});
 
   api.getMovies(function(err, movie){
     if (err) {
@@ -13,3 +14,5 @@ function getTheDatas (zip, movieInput){
     })
   })
 }
+
+var output = getTheDatas(80241, 'Suicide Squad')
