@@ -1,12 +1,15 @@
-var Showtimes = require('showtimes');
-var api = new Showtimes(80241, {});
+function getTheDatas (zip, movieInput){
+  var Showtimes = require('showtimes');
+  var api = new Showtimes(zip, {});
 
-
-api.getMovies(function(err, movie){
-  if (err) {
-    throw err
-  }
-  movie.forEach(function(singleMov){
-    console.log(singleMov.name);
+  api.getMovies(function(err, movie){
+    if (err) {
+      throw err
+    }
+    movie.forEach(function(singleMov){
+      if(userMovie == singleMov.name){
+        console.log(singleMov.theaters[0].name);
+      }
+    })
   })
-})
+}
