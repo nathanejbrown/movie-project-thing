@@ -6,5 +6,9 @@ $(document).ready(function(){
     e.preventDefault()
     userMovie = $('nathens movie id').val()
     userZip = $('nathens zip id').val()
+    getTheDatas(userMovie, userZip).then(function(data){
+      console.log(data);
+    })
   })
+
 })
