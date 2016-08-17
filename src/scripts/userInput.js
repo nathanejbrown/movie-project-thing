@@ -1,3 +1,8 @@
 $(document).ready(function(){
-  $('#movie-input > input')
+  $('#movie-input').submit(function(e){
+    e.preventDefault()
+    var userVal = $('#movie-input').val()
+    console.log(userVal);
+  })
+
 })
