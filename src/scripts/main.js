@@ -12,4 +12,4 @@ function initialize(x,y) {
   };
   var map = new google.maps.Map(document.getElementById('googleMap'),mapProp);
 }
-google.maps.event.addDomListener(window, 'load');
+// google.maps.event.addDomListener(window, 'load');
