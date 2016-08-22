@@ -81967,17 +81967,18 @@ getTheDatas = function (zip, movieInput){
       if (err) {
         throw err
       }
-      movie.forEach(function(singleMov){
-        if(movieInput == singleMov.name){
-          // var output = Promise.resolve(singleMov.theaters)
-        resolve(singleMov.theaters)
-        }
-      })
+      if(movieInput == null){
+        resolve(movie)
+      }else{
+        movie.forEach(function(singleMov){
+          if(movieInput == singleMov.name){
+            // var output = Promise.resolve(singleMov.theaters)
+          resolve(singleMov.theaters)
+          }
+        })
+      }
     })
   });
 }
-// getTheDatas(80241, 'Suicide Squad').then(function(data){
-//   console.log(data);
-// })
 
 },{"showtimes":343}]},{},[383]);
